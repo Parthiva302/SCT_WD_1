@@ -1,36 +1,24 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="dark">
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aurora Landing Page</title>
-  <meta name="description" content="Modern responsive landing page with accessible sticky navigation, smooth scrolling, and dark mode." />
+  <title>Trail Landing Page</title>
+  <meta name="description" content="Trail: a simple responsive landing page." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="progress-bar" aria-hidden="true"><span></span></div>
-
   <header class="site-header" id="siteHeader">
-    <div class="container header-inner">
-      <a class="brand" href="#home">Aurora</a>
-
-      <div class="header-actions">
-        <button class="theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false">
-          <span class="theme-icon">🌙</span>
-          <span class="theme-label">Dark mode</span>
-        </button>
-
-        <button class="nav-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu">
-          <span class="hamburger"></span>
-        </button>
-      </div>
-
+    <div class="container header-wrap">
+      <a class="brand" href="#home">Trail</a>
+      <button class="nav-toggle" aria-controls="main-navigation" aria-expanded="false" aria-label="Open navigation menu">
+        <span class="hamburger"></span>
+      </button>
       <nav class="site-nav" aria-label="Primary navigation">
-        <ul class="nav-list" id="primary-navigation">
+        <ul class="nav-list" id="main-navigation">
           <li><a class="nav-link" href="#home">Home</a></li>
           <li><a class="nav-link" href="#about">About</a></li>
           <li><a class="nav-link" href="#services">Services</a></li>
-          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -39,111 +27,55 @@
 
   <main>
     <section class="hero section" id="home">
-      <div class="container hero-inner">
-        <div>
-          <p class="eyebrow">Crafting modern digital experiences</p>
-          <h1>Responsive landing pages with accessible navigation.</h1>
-          <p class="hero-copy">A clean, mobile-first design that stays visible on every scroll, supports keyboard navigation, and provides smooth section transitions for an engaging experience.</p>
-          <div class="hero-buttons">
-            <a class="button primary" href="#services">Explore services</a>
-            <a class="button secondary" href="#contact">Contact us</a>
-          </div>
-        </div>
-
-        <div class="hero-card">
-          <p class="hero-card-title">Built for accessibility and polish</p>
-          <ul>
-            <li>Fixed top navigation with scroll-aware style</li>
-            <li>Keyboard-friendly hamburger menu</li>
-            <li>Dark mode with persistence</li>
-            <li>Active section highlighting</li>
-          </ul>
+      <div class="container hero-content">
+        <p class="eyebrow">Trail</p>
+        <h1>Simple trail-inspired landing page.</h1>
+        <p class="hero-copy">A basic responsive website with a sticky navigation menu and clean sections for your trail project.</p>
+        <div class="button-row">
+          <a class="button primary" href="#services">Our services</a>
+          <a class="button secondary" href="#contact">Contact us</a>
         </div>
       </div>
     </section>
 
     <section class="section" id="about">
-      <div class="container section-grid">
-        <div>
-          <p class="eyebrow">About</p>
-          <h2>Design systems that feel effortless</h2>
-          <p>We combine clean typography, soft glassmorphism accents, and intuitive motion to help your audience discover the content that matters most.</p>
-        </div>
-        <div class="feature-well">
-          <div>
-            <h3>Accessible structure</h3>
-            <p>Semantic HTML, visible focus states, and high contrast ensure the page works for more users.</p>
-          </div>
-          <div>
-            <h3>Scalable layout</h3>
-            <p>The responsive grid adapts from desktop to mobile without losing the polished visual rhythm.</p>
-          </div>
-        </div>
+      <div class="container">
+        <p class="section-title">About Trail</p>
+        <p class="section-text">Trail provides a simple online presence with easy navigation, clear layout, and a mobile-friendly menu.</p>
       </div>
     </section>
 
     <section class="section" id="services">
-      <div class="container">
-        <p class="eyebrow">Services</p>
-        <h2>Focused solutions for digital brands</h2>
-        <div class="card-grid">
-          <article class="service-card">
-            <h3>Brand systems</h3>
-            <p>Create brand-forward experiences with consistent typography, color, and motion.</p>
-          </article>
-          <article class="service-card">
-            <h3>UI design</h3>
-            <p>Responsive layouts, accessible navigation, and polished interactions that feel fast.</p>
-          </article>
-          <article class="service-card">
-            <h3>Prototyping</h3>
-            <p>Show your vision with interactive prototypes and smooth transitions that communicate motion.</p>
-          </article>
-        </div>
+      <div class="container cards">
+        <article class="card">
+          <h2>Planning</h2>
+          <p>Organize your trail route, highlights, and key details in one place.</p>
+        </article>
+        <article class="card">
+          <h2>Guides</h2>
+          <p>Showcase your trail guides, maps, and important safety information.</p>
+        </article>
+        <article class="card">
+          <h2>Support</h2>
+          <p>Offer contact information, booking options, or trail updates.</p>
+        </article>
       </div>
     </section>
 
-    <section class="section" id="portfolio">
-      <div class="container">
-        <p class="eyebrow">Portfolio</p>
-        <h2>Recent work across web and product</h2>
-        <div class="portfolio-grid">
-          <article class="portfolio-item">
-            <strong>Launch campaign</strong>
-            <p>A landing page focused on conversion and brand clarity.</p>
-          </article>
-          <article class="portfolio-item">
-            <strong>Product dashboard</strong>
-            <p>Accessible dashboard UI with clean information hierarchy.</p>
-          </article>
-          <article class="portfolio-item">
-            <strong>Marketing site</strong>
-            <p>Modern website with motion and content-first layout.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact-section" id="contact">
-      <div class="container section-grid">
+    <section class="section" id="contact">
+      <div class="container contact-section">
         <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Let’s build your next experience.</h2>
-          <p>Reach out to discuss your next digital project, product launch, or brand refresh.</p>
+          <p class="section-title">Contact</p>
+          <p class="section-text">Reach out to plan your next trail adventure or ask questions about the route.</p>
         </div>
-        <div class="contact-card">
-          <p><strong>Email</strong></p>
-          <p><a href="mailto:hello@aurora.example">hello@aurora.example</a></p>
-          <p><strong>Phone</strong></p>
-          <p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
-        </div>
+        <a class="card contact-card" href="mailto:trail@example.com">trail@example.com</a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="container">
-      <p>© 2026 Aurora Studio. Designed for accessible landing experiences.</p>
+      <p>© 2026 Trail. Simple and responsive.</p>
     </div>
   </footer>
 
